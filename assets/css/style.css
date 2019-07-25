@@ -1,0 +1,32 @@
+#instructions {
+    background-color: #bbb;
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 10px;
+}
+#random-number {
+    background-color: greenyellow;
+    text-align: center;
+    padding: 30px;
+    margin: 0 10px 0 0;
+}
+#wins-losses {
+    background-color: rgb(88, 134, 19);
+    text-align: center;
+    padding: 30px;
+    margin: 10px 10px 0 10px;
+}
+
+.diamonds {
+    background-color: rgb(236, 114, 206);
+    text-align: center;
+    padding: 15px;
+    margin: 10px 5px 10px 5px;
+}
+
+#score {
+    background-color: rgb(39, 78, 184);
+    text-align: center;
+    padding: 15px;
+    margin: 10px 5px 10px 5px;
+}
