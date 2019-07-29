@@ -41,10 +41,10 @@ function setHtmlOutput(){
     // For each iteration, generate a new random number between 19 and 120.
     $("#random-number").text(crystalgame.randomWinningNum);
 
-    $("#crystal-1").text(crystalgame.randomCrystal1Num);
-    $("#crystal-2").text(crystalgame.randomCrystal2Num);
-    $("#crystal-3").text(crystalgame.randomCrystal3Num);
-    $("#crystal-4").text(crystalgame.randomCrystal4Num);
+    // $("#crystal-1").text(crystalgame.randomCrystal1Num);
+    // $("#crystal-2").text(crystalgame.randomCrystal2Num);
+    // $("#crystal-3").text(crystalgame.randomCrystal3Num);
+    // $("#crystal-4").text(crystalgame.randomCrystal4Num);
     $("#wins").text(crystalgame.wins);
     $("#losses").text(crystalgame.losses);
     $("#score").text(crystalgame.counter);

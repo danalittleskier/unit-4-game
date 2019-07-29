@@ -1,20 +1,30 @@
 #instructions {
     background-color: #bbb;
-    text-align: center;
-    padding: 30px;
+    text-align: left;
+    padding: 20px;
     margin-bottom: 10px;
+}
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(27, 105, 27);
+    font-size: 16px;
 }
 #random-number {
     background-color: greenyellow;
+    width: 250px;
+    height: 150px;
     text-align: center;
+    font-size: 20px;
     padding: 30px;
     margin: 0 10px 0 0;
 }
 #wins-losses {
     background-color: rgb(88, 134, 19);
+    width: 170px;
+    height: 150px;
     text-align: center;
     padding: 30px;
-    margin: 10px 10px 0 10px;
+    margin: 0 10px 0 0;
 }
 
 #score {
@@ -26,10 +36,15 @@
     margin: 5px 5px 10px 5px;
 }
 .crystal-image {
-    background-color: rgb(236, 114, 206);
-    width: 100px;
-    height: 100px;
+    background-color: rgb(42, 158, 158);
+    width: 125px;
+    height: 125px;
     text-align: center;
-    padding: 15px;
+    padding: 15px; 
     margin: 10px 5px 10px 5px;
   }
+
+img {
+    width: 100px;
+    height: 100px;
+}
