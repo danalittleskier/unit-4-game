@@ -22,39 +22,16 @@ var crystalgame = {
     }
 }
 
+//Load a new game and the DOM with new values
 $( document ).ready(function() {
  
     crystalgame.createNewGame();
     setHtmlOutput();
     
 });
- 
-function getRandomNumber(min, max){
-    return Math.floor(Math.random() * (max - min + 1) ) + min;
-}
 
-function addToNumber(first, second){
-    return first + second;
-}
-
-function setHtmlOutput(){
-    // For each iteration, generate a new random number between 19 and 120.
-    $("#random-number").text(crystalgame.randomWinningNum);
-
-    // $("#crystal-1").text(crystalgame.randomCrystal1Num);
-    // $("#crystal-2").text(crystalgame.randomCrystal2Num);
-    // $("#crystal-3").text(crystalgame.randomCrystal3Num);
-    // $("#crystal-4").text(crystalgame.randomCrystal4Num);
-    $("#wins").text(crystalgame.wins);
-    $("#losses").text(crystalgame.losses);
-    $("#score").text(crystalgame.counter);
-
-    $("#crystal-1").attr("data-crystalvalue", crystalgame.randomCrystal1Num);
-    $("#crystal-2").attr("data-crystalvalue", crystalgame.randomCrystal2Num);
-    $("#crystal-3").attr("data-crystalvalue", crystalgame.randomCrystal3Num);
-    $("#crystal-4").attr("data-crystalvalue", crystalgame.randomCrystal4Num);   
-}
-
+//On image click grab the random values and add it to our score.  
+//Output the new values.  Check if the user won or lost the game.
 $(".crystal-image").on("click", function() {
 
     var crystalValue = ($(this).attr("data-crystalvalue"));
@@ -77,3 +54,25 @@ $(".crystal-image").on("click", function() {
         setHtmlOutput();
     }
 });
+
+//Output game values to the DOM
+function setHtmlOutput(){
+    // For each iteration, generate a new random number between 19 and 120.
+    $("#random-number").text(crystalgame.randomWinningNum);
+
+    $("#wins").text(crystalgame.wins);
+    $("#losses").text(crystalgame.losses);
+    $("#score").text(crystalgame.counter);
+
+    $("#crystal-1").attr("data-crystalvalue", crystalgame.randomCrystal1Num);
+    $("#crystal-2").attr("data-crystalvalue", crystalgame.randomCrystal2Num);
+    $("#crystal-3").attr("data-crystalvalue", crystalgame.randomCrystal3Num);
+    $("#crystal-4").attr("data-crystalvalue", crystalgame.randomCrystal4Num);   
+}
+
+//Create random number from a min and a max
+function getRandomNumber(min, max){
+    return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
+
+
